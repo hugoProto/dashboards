@@ -19,9 +19,10 @@ class CurrenciesController < ApplicationController
 
     # params are
     # Parameters: {"from_currency"=>"ARS"}
-
+    
     @from_symbol = params.fetch("from_currency")
-    render({ :template => "currency_templates/step_two.html.erb"})
+
+    render({ :template => "currency_templates/step_two.html.erb" })
   end
 
   def convert
